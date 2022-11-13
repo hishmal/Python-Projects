@@ -8,3 +8,5 @@ server.login('zahid.tnear@gmail.com', 'pythonPractice')
 
 server.sendmail('zahid.tnear@gmail.com','hishymalik@gmail.com','Hey,\nThis is a test.')
 print('Mail Sent')
+
+# Gmail is more secure. Need to use 2FA code to login.
