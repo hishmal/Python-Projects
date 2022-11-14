@@ -1,0 +1,27 @@
+total_votes = int(input())
+sequence_of_votes = input()
+
+A = sequence_of_votes.count('A')
+B = sequence_of_votes.count('B')
+
+if A > B:
+    print('A')
+elif B > A:
+    print('B')
+else:
+    print('Tie')
+    
+# OR WE CAN USE
+
+total_votes = int(input())
+sequence_of_votes = input()
+
+A = sequence_of_votes.count('A')
+B = sequence_of_votes.count('B')
+
+if A > B:
+    print('A')
+elif B > A:
+    print('B')
+else:
+    print('Tie')
