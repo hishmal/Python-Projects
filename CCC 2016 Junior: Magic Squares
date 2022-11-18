@@ -1,0 +1,43 @@
+# LINE 1 AND ROW 1
+line1 = input()
+row1 = line1.split()
+
+for i in range(0, len(row1)):
+    row1[i] = int(row1[i])
+
+# LINE 2 AND ROW 2
+line2 = input()
+row2 = line2.split()
+
+for i in range(0, len(row2)):
+    row2[i] = int(row2[i])
+
+#LINE 3 AND ROW 3
+line3 = input()
+row3 = line3.split()
+
+for i in range(0, len(row3)):
+    row3[i] = int(row3[i])
+
+#LINE 4 AND ROW 4
+line4 = input()
+row4 = line4.split()
+
+for i in range(0, len(row4)):
+    row3[i] = int(row3[i])
+    
+totalrow1 = int(row1[0]) + int(row1[1]) + int(row1[2]) + int(row1[3])
+totalrow2 = int(row2[0]) + int(row2[1]) + int(row2[2]) + int(row2[3])
+totalrow3 = int(row3[0]) + int(row3[1]) + int(row3[2]) + int(row3[3])
+totalrow4 = int(row4[0]) + int(row4[1]) + int(row4[2]) + int(row4[3])
+
+totalcolumn1 = int(row1[0]) + int(row2[0]) + int(row3[0]) + int(row4[0])
+totalcolumn2 = int(row1[1]) + int(row2[1]) + int(row3[1]) + int(row4[1])
+totalcolumn3 = int(row1[2]) + int(row2[2]) + int(row3[2]) + int(row4[2])
+totalcolumn4 = int(row1[3]) + int(row2[3]) + int(row3[3]) + int(row4[3])
+
+if totalrow1 == totalrow2 and totalrow2 == totalrow3 and totalrow3 == totalrow4:
+    if totalcolumn1 == totalcolumn2 and totalcolumn2 == totalcolumn3 and totalcolumn3 == totalcolumn4:
+        print('magic')
+else:
+    print('not magic')
