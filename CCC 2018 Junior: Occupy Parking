@@ -1,0 +1,11 @@
+parking_spots = int(input())
+yesterday_info = input()
+today_info = input()
+counter = 0
+# C = occupied space, . means empty
+
+for i in range(parking_spots):
+    if yesterday_info[i] == 'C' and today_info[i] == 'C':
+        counter += 1
+
+print(counter)
