@@ -1,0 +1,20 @@
+count = 0
+W = 0
+L = 0
+
+while count < 6:
+    winsorloss = input() 
+    count += 1
+    if winsorloss.count('W') == True:
+        W += 1
+    else:
+        L += 1
+
+if W == 5 or W == 6:
+    print('1')
+elif W == 3 or W == 4:
+    print('2')
+elif W == 1 or W == 2:
+    print('3')
+else:
+    print('-1')
