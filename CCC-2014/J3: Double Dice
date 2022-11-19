@@ -1,0 +1,15 @@
+rounds = int(input())
+david_score = 100 
+antonio_score = 100
+    
+for i in range(rounds):
+    
+    antonio, david = input().split()
+    
+    if antonio < david:
+        antonio_score = antonio_score - int(david)
+    elif david < antonio:
+        david_score = david_score - int(antonio)
+    
+print(antonio_score)
+print(david_score)
