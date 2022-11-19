@@ -1,0 +1,18 @@
+message = input()
+
+happy_face = message.count(':-)')
+sad_face = message.count(':-(')
+
+# check if there are no happy or sad emoticons
+if happy_face == 0 and sad_face == 0:
+    print('none')
+
+# check if happy_face is equal to sad_face
+elif happy_face == sad_face:
+    print('unsure')
+
+# check for amount of happy/sad faces
+elif happy_face > sad_face:
+    print('happy')
+elif sad_face > happy_face:
+    print('sad')
